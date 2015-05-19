@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>AllowSharingCentralOpps</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>AllowSharingCentralOpps</label>
+        <sharedTo>
+            <group>AllEastUsers</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>AllCentralUsers</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>AllowSharingCentralOppsWestUsers</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>AllowSharingCentralOppsWithWest</label>
+        <sharedTo>
+            <group>AllWesUsers</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>AllCentralUsers</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>ShareRecordsWithCEO</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>ShareRecordsWithCEO</label>
+        <sharedTo>
+            <role>CEO</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>EasternSalesTeam</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

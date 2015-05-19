@@ -1,0 +1,30 @@
+<apex:page standardcontroller="Account"  extensions="AESCustomController">
+<apex:image url="{!$Resource.MySampleStaticResource}" width="50" height="50"/>
+<apex:form >
+    <apex:pageBlock title="Contact Search">
+         <apex:pageBlockSection >
+            <apex:outputLabel value="Account Name" />
+            <apex:outputLabel value="{!account.name}"/>
+         </apex:pageBlockSection>
+         
+         <apex:pageBlockSection >
+            <apex:outputLabel value="Contact Email" />
+            <apex:inputText id="SerarchContact"  value="{!email}">
+                <apex:actionFunction action="{!searchContact}" name="myActionFunction" rerender="contactsList">  
+                </apex:actionFunction>
+            </apex:inputText>
+            <apex:commandButton action="{!searchContact}" value="Go"  id="theButton"/>
+         </apex:pageBlockSection>
+    </apex:pageBlock> 
+
+    <apex:pageBlock title="Contact List">
+        <apex:pageBlockTable value="{!conList}" id="contactsList" var="item">
+            <apex:column value="{!item.firstName}"/>
+            <apex:column value="{!item.lastName}"/>
+            <apex:column value="{!item.email}"/>
+            <apex:column value="{!item.phone}"/> 
+        </apex:pageBlockTable> 
+    </apex:pageBlock> 
+</apex:form>
+
+</apex:page>

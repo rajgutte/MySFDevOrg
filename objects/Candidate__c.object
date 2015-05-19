@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <compactLayouts>
+        <fullName>Candidate</fullName>
+        <fields>Last_Name__c</fields>
+        <fields>City__c</fields>
+        <fields>Education__c</fields>
+        <fields>Years_of_Experience__c</fields>
+        <label>Candidate</label>
+    </compactLayouts>
+</CustomObject>

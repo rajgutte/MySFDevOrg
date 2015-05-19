@@ -1,0 +1,28 @@
+<apex:page controller="RelationshipSearchController">
+  <apex:form >
+    <apex:pageBlock >
+       <apex:pageBlockButtons >
+        <apex:commandButton action="{!executeSearch}" value="Search"/>
+        <apex:commandButton action="{!addRelationships}" value="Add Relationships"/>
+       </apex:pageBlockButtons>
+      <apex:pageBlockSection title="Relationship">
+      <apex:outputLabel value="Relationship Name"/>
+      <apex:inputText value="{!nameQuery}"/>
+      
+   </apex:pageBlockSection>
+    
+   <apex:pageBlockTable value="{!relationships}" var="rel">
+      <apex:column >
+          <apex:inputCheckbox value="{!checkBox}">
+          <apex:actionSupport event="onchange" action="{!selectRel}" rerender="theBlock">
+            <apex:param name="relId" value="{!rel.Id}" />
+          </apex:actionSupport>
+          </apex:inputCheckbox>          
+      </apex:column>
+      <apex:column headerValue="Relationship Name" value="{!rel.Name}"/>
+      <apex:column headerValue="Primary Relationship Contact" value="{!rel.Primary_Relationship_Contact__c}"/>
+      <apex:column headerValue="RecordId" value="{!rel.Id}"/>
+   </apex:pageBlockTable>
+ </apex:pageBlock>
+  </apex:form>
+</apex:page>

@@ -1,0 +1,7 @@
+<apex:page controller="WebServiceInvoker" >
+    <apex:form >
+        <apex:commandButton value="Calculate" action="{!calculate}"/>
+        <apex:inputTextarea value="{!x}"/>
+        <apex:inputTextarea value="{!y}"/>
+    </apex:form>
+</apex:page>

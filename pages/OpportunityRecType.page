@@ -1,0 +1,13 @@
+<apex:page controller="OpportuntityRecTypeController">
+    <apex:form id="TheForm">
+        <apex:pageBlock >
+            <apex:pageBlockSection >                               
+                <apex:selectList value="{!strRecordType}" multiselect="false">
+                    <apex:selectOptions value="{!RecordTypes}"/>
+                    <apex:actionsupport event="onchange" action="{!updateRecordType}" rerender="TheForm"/>
+                </apex:selectList>
+                <apex:inputField value="{!opp.DeliveryInstallationStatus__c}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

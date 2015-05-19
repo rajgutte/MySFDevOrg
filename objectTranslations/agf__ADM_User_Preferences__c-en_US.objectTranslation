@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- BacklogHideWorkWithSprintToggle --></label>
+        <name>agf__BacklogHideWorkWithSprintToggle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Backlog view on Virtual Wall --></label>
+        <name>agf__ShowBacklogviewonVirtualWall__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Chatter on Virtual Wall --></label>
+        <name>agf__ShowChatteronVirtualWall__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Delete Task Dialog --></label>
+        <name>agf__ShowDeleteTaskDialog__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Move Task To Completed Dialog --></label>
+        <name>agf__ShowMoveTaskToCompletedDialog__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Move Task To In Progress Dialog --></label>
+        <name>agf__ShowMoveTaskToInProgressDialog__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Move Uncompleted Tasks Dialog --></label>
+        <name>agf__ShowMoveUncompletedTasksDialog__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Move Work To Other Sprint Warning --></label>
+        <name>agf__ShowMoveWorkToOtherSprintDialog__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Product Tag Assignment Guided Tour --></label>
+        <name>agf__ShowProductTagAssignmentGuidedTour__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Product Tag Guided Tour --></label>
+        <name>agf__ShowProductTagGuidedTour__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Remove Work From Sprint Warning --></label>
+        <name>agf__ShowRemoveWorkFromSprintDialog__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Virtual Wall Guided Tour --></label>
+        <name>agf__ShowVirtualWallGuidedTour__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tab Panel View Preference --></label>
+        <name>agf__TabPanelViewPreference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Work Panel --></label>
+        <name>agf__WorkPanelViewPreference__c</name>
+    </fields>
+</CustomObjectTranslation>

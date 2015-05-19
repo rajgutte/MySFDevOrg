@@ -1,0 +1,12 @@
+<apex:page standardController="Relationship__c" recordSetVar="relationships" extensions="CustomerChangeOwnerApexClass">
+  <apex:form >
+     <apex:pageBlock >
+     <apex:pageBlockSection title="Select New Owner"> 
+         <apex:inputField value="{!Relationship__c.OwnerId}"/>
+         <p><apex:inputCheckbox label="Send Notification Email"/></p>
+        <apex:commandButton action="{!save}" value="Save"/>
+        <apex:commandButton value="Cancel"/>
+     </apex:pageBlockSection>
+     </apex:pageBlock>
+ </apex:form>
+ </apex:page>

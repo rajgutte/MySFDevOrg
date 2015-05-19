@@ -1,0 +1,10 @@
+<apex:page standardController="Relationship__c" extensions="CustomerChangeOwnerApexClass">
+  <apex:form >
+      <apex:pageBlock >
+      <apex:pageBlockButtons >
+          <apex:commandButton onclick="return confirm('Are you Sure?. OK/Cancel');" action="{!yourMethod}" value="Call your method"/>
+      </apex:pageBlockButtons>
+      </apex:pageBlock>
+      <apex:detail />
+ </apex:form>
+ </apex:page>

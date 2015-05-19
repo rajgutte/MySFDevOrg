@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Relationship_Contacts__r$Relationship__c</field>
+    </columns>
+    <columns>
+        <field>Account.Relationship_Contacts__r$Name</field>
+    </columns>
+    <format>Tabular</format>
+    <name>AccountWithRelReport</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AcctWithRel__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_PREV2FY</interval>
+    </timeFrameFilter>
+</Report>

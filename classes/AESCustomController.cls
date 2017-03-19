@@ -11,7 +11,7 @@ public class AESCustomController {
 	Public PageReference searchContact() {
 		
 	conList = [ select firstName, lastName, email, phone 
-					from Contact where email = :email];
+					from Contact where email = :email LIMIT 1];
 	return null;
 		
 	}
